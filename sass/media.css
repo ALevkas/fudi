@@ -1,0 +1,238 @@
+@media (max-width: 1360px) {
+  .header {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .header-logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .header-nav {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .header-text {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+  }
+  .icons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    height: auto;
+  }
+  .icons-item__1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .icons-item__2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .icons-item__3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  .fudiapp {
+    height: auto;
+    -ms-grid-columns: (1fr)[2] 25px;
+        grid-template-columns: repeat(2, 1fr) 25px;
+    -ms-grid-rows: 25px 1fr 25px;
+        grid-template-rows: 25px 1fr 25px;
+  }
+  .fudiapp-image {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .fudiapp-description {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-rows: (1fr)[auto-fit];
+        grid-template-rows: repeat(auto-fit, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .quotes {
+    height: auto;
+    -ms-grid-rows: 25px (1fr)[3];
+        grid-template-rows: 25px repeat(3, 1fr);
+  }
+  .quotes-photo {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .quotes-subtitle {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .quotes-fio {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .cuisenes {
+    height: auto;
+    -ms-grid-rows: 0.1fr 1fr 0.3fr;
+        grid-template-rows: 0.1fr 1fr 0.3fr;
+  }
+  .cuisenes-footer {
+    -ms-grid-columns: (1fr)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 0.2fr 1fr 30px;
+        grid-template-rows: 0.2fr 0.2fr 1fr 30px;
+    height: auto;
+  }
+  .header-logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .header-nav {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: none;
+  }
+  .header-text {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .header-text__quotes {
+    font-size: 15px;
+  }
+  .header-text__title {
+    font-size: 25px;
+  }
+  .header-text__buttons {
+    width: auto;
+  }
+  .icons {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .icons-item__1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .icons-item__2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .icons-item__3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .fudiapp {
+    height: auto;
+    -ms-grid-columns: 25px 1fr 25px;
+        grid-template-columns: 25px 1fr 25px;
+    -ms-grid-rows: 25px 1fr 25px;
+        grid-template-rows: 25px 1fr 25px;
+  }
+  .fudiapp-image {
+    display: none;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .fudiapp-description {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-rows: (1fr)[auto-fit];
+        grid-template-rows: repeat(auto-fit, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    row-gap: 25px;
+  }
+  .quotes {
+    height: auto;
+    -ms-grid-rows: 25px (1fr)[3];
+        grid-template-rows: 25px repeat(3, 1fr);
+  }
+  .quotes-photo {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .quotes-subtitle {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .quotes-fio {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  .cuisenes {
+    height: auto;
+    -ms-grid-rows: 0.1fr 1fr 0.3fr;
+        grid-template-rows: 0.1fr 1fr 0.3fr;
+  }
+  .cuisenes-footer {
+    -ms-grid-columns: (1fr)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 1fr);
+  }
+  .footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=media.css.map */

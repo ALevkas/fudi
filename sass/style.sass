@@ -1,0 +1,247 @@
+*, *:before, *:after
+    box-sizing: border-box
+body    
+    font-family: Lato-bla
+    margin: 0
+
+$gradient_header: linear-gradient(to right, rgba(40, 27, 27, 0.85) 0%, rgba(202, 54, 54, 0.85) 100%)
+$gradient-qoutes: linear-gradient(to right, rgba(40, 27, 27, 0.85) 0%, rgba(202, 54, 54, 0.85) 100%)
+$myGray: #9e9d9db9
+
+.header
+    display: grid
+    grid-template-columns: repeat(6,1fr)
+    grid-template-rows: 1fr 2fr 10fr 1fr
+    align-items: center
+    justify-items: center
+    background: $gradient_header, url('../img/header.png')
+    background-size: cover
+    background-position: center center
+    font-family: Lato-bla
+    height: 100vh
+    &-logo
+        grid-row: 2/3
+        grid-column: 2/3
+    &-nav
+        display: grid
+        grid-row: 2/3
+        grid-column: 5/6
+        grid-auto-flow: column
+        justify-self: stretch
+        a
+            color: #fff
+            text-decoration: none
+            font-size: 25px
+            justify-self: center
+    &-text
+        grid-row: 3/4
+        grid-column: 2/6
+        color: #fff
+        text-align: center
+        display: grid
+        a            
+            text-decoration: none
+            color: #fff
+        &__quotes
+            opacity: 0.7
+            text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55)
+            font-size: 36px
+            font-weight: 400
+            line-height: 30px
+            letter-spacing: 1.8px
+        &__title
+            text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55)
+            font-size: 50px
+            font-weight: 700
+            line-height: 30px
+            letter-spacing: 5px
+        &__buttons
+            justify-self: center
+            width: 75%
+            a
+                display: block
+                border: 1px solid #fff
+                padding: 15px
+        &__subscribe
+            margin-top: 25px
+            span
+                letter-spacing: 0.7px
+                font-weight: 400
+                text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55)
+                letter-spacing: 0.7px
+                opacity: 0.7
+            a
+                text-decoration: underline
+                font-weight: 700
+
+.icons
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    height: 40vh
+    text-align: center
+    gap: 15px
+    h4
+        line-height: 30px
+        letter-spacing: 0.9px
+        font-weight: 700
+    hr
+        color: #f57365
+        width: 25%
+    span
+        font-weight: 300
+        line-height: 18px
+        font-size: 16px
+        letter-spacing: 0.8px
+    &-item
+        &__1
+            grid-template-rows: 2fr 0.5fr 0.1fr 2fr
+            display: grid
+            align-items: center
+            justify-items: center
+            grid-column: 2/3
+        &__2
+            grid-template-rows: 2fr 0.5fr 0.1fr 2fr
+            display: grid
+            align-items: center
+            justify-items: center
+            grid-column: 3/4
+        &__3
+            grid-template-rows: 2fr 0.5fr 0.1fr 2fr
+            display: grid
+            align-items: center
+            justify-items: center
+            grid-column: 4/5
+
+.fudiapp
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    justify-items: center
+    height: 60vh    
+    background: $myGray
+    &-image
+        grid-column: 2/4
+        justify-items: center
+        align-items: center
+        display: grid
+        img
+            width: 50%
+
+    &-description
+        display: grid
+        grid-column: 4/6
+        grid-template-rows: 0.2fr 0.5fr 0.2fr
+        &__title
+            justify-self: start
+            align-self: center
+            hr
+                color: #f57365
+                width: 25%
+                margin: auto 0
+        &__subtitle
+            justify-self: start
+            align-self: start
+            span
+                letter-spacing: 0.8px
+                line-height: 18px
+                font-weight: 300
+                font-size: 16px
+        &__icons
+
+.quotes
+    background: $gradient_qoutes, url('../img/quotes.png')
+    height: 40vh
+    background-size: cover
+    background-position: center center
+    display: grid
+    align-items: center
+    justify-items: center
+    grid-template-columns: repeat(5, 1fr)
+    text-align: center
+    &-photo
+        grid-column: 2/5
+    &-subtitle
+        grid-column: 2/5
+        font-size: 30px
+        font-weight: 400
+        line-height: 36px
+        font-family: "Lato-Hai"
+        color: #fff
+    &-fio
+        grid-column: 2/5
+        font-size: 18px
+        font-weight: 400
+        line-height: 36px
+        font-family: "Lato-Hai"
+        color: #fff
+
+.cuisenes
+    display: grid
+    height: 100vh
+    &-header
+        align-self: center
+        justify-self: center
+    &-body
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))        
+        // grid-auto-rows: minmax(min-content, max-content)
+        justify-items: center
+        align-items: center
+
+    &-footer
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+        align-items: center
+        justify-items: center
+        text-align: center
+        &__item
+            display: grid
+            row-gap: 15px
+            &-title
+                font-size: 36px
+                display: block
+                font-weight: 700
+                line-height: 30px
+                letter-spacing: 1.8px
+            &-subtitle
+                font-family: Lato
+                font-size: 16px
+                font-weight: 300
+                line-height: 18px
+                letter-spacing: 0.8px
+
+.footer
+    height: 20vh
+    display: grid
+    grid-template-columns: repeat( 2, 1fr )
+    align-items: center
+    justify-items: center
+    background: $myGray
+    &-copy
+        opacity: 0.5
+        font-size: 14px
+        font-weight: 300
+
+    &-created
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase        
+        letter-spacing: 2.8px
+        &__title          
+            opacity: 0.5
+            font-weight: 300
+        &__url
+            font-weight: 400
+
+
+// FONT
+@font-face
+    font-family: "Lato-Bla"
+    src: url("../fonts/Lato-Bla.ttf") format("truetype")
+    font-style: normal
+    font-weight: normal
+
+@font-face
+    font-family: "Lato-Hai"
+    src: url("../fonts/Lato-Hai.ttf") format("truetype")
+    font-style: normal
+    font-weight: normal
